@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uikit Playground</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/uikit.docs.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+	<link rel="stylesheet" type="text/css" href="css/themes/tooltipster-light.css" />
+	<link rel="stylesheet" type="text/css" href="css/themes/tooltipster-noir.css" />
+	<link rel="stylesheet" type="text/css" href="css/themes/tooltipster-punk.css" />
+	<link rel="stylesheet" type="text/css" href="css/themes/tooltipster-shadow.css" />
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/uikit.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+            	animation: 'fade',
+            	theme: '.tooltipster-default',
+					    touchDevices: true,
+					    updateAnimation: true
+            });
+        });
+  </script>
+  <script>
+        $(document).ready(function() {
+            $('.tooltip-light').tooltipster({
+            	animation: 'grow',
+            	theme: '.tooltipster-light',
+					    touchDevices: true,
+					    updateAnimation: true            	
+            });
+        });
+  </script>
+  <script>
+        $(document).ready(function() {
+            $('.tooltip-noir').tooltipster({
+            	animation: 'swing',
+            	theme: '.tooltipster-noir',
+					    touchDevices: true,
+					    updateAnimation: true            	
+            });
+        });
+  </script>
+  <script>
+        $(document).ready(function() {
+            $('.tooltip-punk').tooltipster({
+            	animation: 'slide',
+            	theme: '.tooltipster-punk',
+					    touchDevices: true,
+					    updateAnimation: true            	
+            });
+        });
+  </script>
+  <script>
+        $(document).ready(function() {
+            $('.tooltip-shadow').tooltipster({
+            	animation: 'fall',
+            	theme: '.tooltipster-shadow',
+					    touchDevices: true,
+					    updateAnimation: true            	
+            });
+        });
+  </script>
+</head>
+<body class="page-blog">
+
+<!--Navbar Begin -->
+
+	<nav class="uk-navbar">
+
+									<a class="uk-navbar-brand" href="#">Tsuki No Me</a>
+
+									<ul class="uk-navbar-nav">
+										<li class="uk-parent uk-active" data-uk-dropdown="">
+											<a href=""><i class="uk-icon-home"></i> Home</a>
+
+											<div class="uk-dropdown uk-dropdown-navbar" style="">
+												<ul class="uk-nav uk-nav-navbar">
+													<li><a href="#">Item</a></li>
+													<li><a href="#">Another item</a></li>
+													<li class="uk-nav-header">Header</li>
+													<li><a href="#">Item</a></li>
+													<li><a href="#">Another item</a></li>
+													<li class="uk-nav-divider"></li>
+													<li><a href="#">Separated item</a></li>
+												</ul>
+											</div>
+
+										</li>
+
+									</ul>
+
+									<div class="uk-navbar-content">Some <a href="#">link</a>.</div>
+									
+									<ul class="uk-navbar-nav">
+									<li class="uk-parent" data-uk-dropdown="">
+								<a href=""><i class="uk-icon-user"></i> Profile <i class="uk-icon-caret-down"></i></a>
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3" style="">
+
+									<div class="uk-grid">
+										<div class="uk-width-1-3">
+
+											<ul class="uk-nav uk-nav-dropdown uk-panel">
+												<li><a href="#">Item</a></li>
+												<li><a href="#">Another item</a></li>
+												<li class="uk-nav-header">Header</li>
+												<li><a href="#">Item</a></li>
+												<li><a href="#">Another item</a></li>
+												<li class="uk-nav-divider"></li>
+												<li><a href="#">Separated item</a></li>
+											</ul>
+
+											<div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+										</div>
+										<div class="uk-width-1-3">
+
+											<ul class="uk-nav uk-nav-dropdown uk-panel">
+												<li><a href="#">Item</a></li>
+												<li><a href="#">Another item</a></li>
+												<li class="uk-nav-header">Header</li>
+												<li><a href="#">Item</a></li>
+												<li><a href="#">Another item</a></li>
+												<li class="uk-nav-divider"></li>
+												<li><a href="#">Separated item</a></li>
+											</ul>
+
+											<div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+										</div>
+										<div class="uk-width-1-3">
+
+											<div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+											<div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
+
+										</div>
+									</div>
+
+								</div>
+							</li>
+							</ul>
+
+									<div class="uk-navbar-flip">
+									<div class="uk-navbar-content">
+										<form class="uk-search" data-uk-search="{flipDropdown:true, source:'js/searchresults.json'}">
+											<input class="uk-search-field" type="search" placeholder="search...">
+											<button class="uk-search-close" type="reset"></button>
+										</form>
+									</div>
+								</div>
+
+								</nav>	
+
+<!--Navbar End-->
+
+<div class="uk-grid backg">
+	<div class="uk-container-center">
+		<div class="uk-width-large-3-10 uk-width-medium-3-10 uk-push-8-10">
+			
+			<a href="#" class="uk-icon-button uk-icon-github tooltip" title="<span class='uk-icon-github-sign git'></span> <b>Git Hub</b>"></a>
+
+			<a href="#" class="uk-icon-button uk-icon-twitter tooltip-light" title="<img id='twittertip'/> <b> Twitter</b>"></a>
+			
+			<a href="#" class="uk-icon-button uk-icon-facebook tooltip-noir" title="<img id='fbtip'/> <b> Facebook</b>"></a>
+			
+			<a href="#" class="uk-icon-button uk-icon-pinterest tooltip-punk" title="<img id='pintip'/> <b> Pinterest</b>"></a>
+			
+			<a href="#" class="uk-icon-button uk-icon-google-plus tooltip-shadow" title="<img id='plustip'/> <b> Google Plus</b></p>"></a>
+		
+		</div>
+		<div class="main-div">
+			<h1 class="uk-h1">Project</h1>
+			<div class="uk-grid">
+				<div class="uk-width-5-10">
+					<p class="uk-h2">Tsuki No Me <button class="uk-button uk-button-small uk-button-primary" data-uk-modal="{target:'#modal'}">Ten Tails Jhinchuriki</button></p>
+					<div id="modal" class="uk-modal" style="display: none;">
+								<div class="uk-modal-dialog uk-modal-dialog-frameless" style="margin-left: -300px;">
+									<button type="button" class="uk-modal-close uk-close uk-close-alt"></button>
+									<img src="img/obito.png" alt="Ten Tails Jhinchuriki">
+								</div>
+							</div>
+				</div>
+				<div class="uk-width-2-10 uk-push-3-10">
+					<div class="uk-button-group">
+						<button class="uk-button uk-button-danger" data-uk-offcanvas="{target:'#offcanvas-1'}"><i class="uk-icon-info-sign"></i> About</button>
+						<button class="uk-button uk-button-danger" data-uk-offcanvas="{target:'#offcanvas-2'}"><i class="uk-icon-external-link"></i> Links</button>
+					</div>
+
+							<div id="offcanvas-1" class="uk-offcanvas">
+								<div class="uk-offcanvas-bar">
+									<div class="uk-panel">
+										<h3 class="uk-panel-title">About Project</h3>
+										Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									</div>
+
+									<div class="uk-panel">
+										<h3 class="uk-panel-title">About Us</h3>
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+								</div>
+							</div>
+
+							<div id="offcanvas-2" class="uk-offcanvas">
+
+								<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+
+									<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+										<li><a href="">Header</a></li>
+										<li class="uk-active"><a href="">Active</a></li>
+
+										<li class="uk-parent">
+											<a href="#"><i class="uk-icon-star"></i> Parent</a>
+											<ul class="uk-nav-sub">
+												<li><a href="">Sub item</a></li>
+												<li><a href="">Sub item</a>
+													<ul>
+														<li><a href="">Sub item</a></li>
+														<li><a href="">Sub item</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+
+										<li class="uk-parent">
+											<a href="#">Parent</a>
+											<ul class="uk-nav-sub">
+												<li><a href="">Sub item</a></li>
+												<li><a href="">Sub item</a></li>
+											</ul>
+										</li>
+
+										<li><a href="">Item</a></li>
+										
+										<li class="uk-nav-divider"></li>
+
+										<li class="uk-nav-header">Social</li>
+										<li><a href=""><i class="uk-icon-github-alt"></i> Git Hub</a></li>
+										<li><a href=""><i class="uk-icon-twitter"></i> Twitter</a></li>
+										<li><a href=""><i class="uk-icon-facebook"></i> Facebook</a></li>
+										<li><a href=""><i class="uk-icon-linkedin"></i> Linkedin</a></li>
+										<li class="uk-nav-divider"></li>
+										<li><a href=""><i class="uk-icon-rss"></i> RSS</a></li>
+									</ul>
+
+								</div>
+
+							</div>
+				</div>
+			</div>		
+			<hr>
+			<h3 class="tm-article-subtitle">Blockquote</h3>
+			<blockquote>
+				<p><i class="uk-icon-quote-left uk-icon-medium"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. <i class="uk-icon-quote-right uk-icon-medium"></i></p>
+				<small>Dipesh Bhardwaj</small>
+			</blockquote>
+			
+			<div class="uk-grid data-uk-grid-match">
+				<div class="uk-width-1-2">
+					<pre>
+					<div class="uk-badge uk-badge-success" id="complex">Complex Code</div>
+						<code>
+	function MakeProcInstance(M: TMethod): Pointer; 
+begin 
+  // allocate memory 
+  GetMem(Result, 15); 
+  asm 
+    // MOV ECX,  
+    MOV BYTE PTR [EAX], $B9 
+    MOV ECX, M.Data 
+    MOV DWORD PTR [EAX+$1], ECX 
+    // POP EDX 
+    MOV BYTE PTR [EAX+$5], $5A 
+    // PUSH ECX 
+    MOV BYTE PTR [EAX+$6], $51 
+    // PUSH EDX 
+    MOV BYTE PTR [EAX+$7], $52 
+    // MOV ECX,  
+    MOV BYTE PTR [EAX+$8], $B9 
+    MOV ECX, M.Code 
+    MOV DWORD PTR [EAX+$9], ECX 
+    // JMP ECX 
+    MOV BYTE PTR [EAX+$D], $FF 
+    MOV BYTE PTR [EAX+$E], $E1 
+  end; 
+end;</code>
+					</pre>
+				</div>
+
+				<div class="uk-width-1-2">
+					<dl>
+						<dt>Descriptions Lists</dt>
+						<dd>Description Lists are those which defines brief description of the list item.</dd>
+						
+						<dt>Item 1</dt>
+						<dd>This is the description for item 1</dd>
+						
+						<dt>Item 2</dt>
+						<dd>This is the description for item 2</dd>
+					</dl>
+					<div class="uk-alert uk-alert-large uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" data-uk-alert="">
+						<a href="" class="uk-alert-close uk-close uk-close-alt"></a>
+						<h2>What this code does?</h2>
+						<p>What this Delphi code does is - in short - the following: It creates a executable block of memory that, when called, will push the pointer to the object that is referenced in the TMethod argument on the stack. After that it will call the method. <br>This code can dynamically create a certain method for each object that used in API - even in multiple threads - and always the correct object could be called.</p>
+					</div>
+				</div>	
+			</div>		
+			<hr>
+			<div class="uk-grid data-uk-grid-match">
+				<div class="uk-width-1-3"><img src="img/1.png"></div>
+				<div class="uk-width-1-3"><img src="img/2.png"></div>
+				<div class="uk-width-1-3"><img src="img/3.png"></div>
+			</div>
+			<hr>
+
+			<h2 class="tm-article-subtitle">Panels</h2>
+
+			<div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}">
+				<div class="uk-width-medium-1-3">
+					<div class="uk-panel uk-panel-box uk-panel-header uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-up" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+						<div class="uk-panel-badge uk-badge uk-badge">Notification</div>
+						<h3 class="uk-panel-title"><i class="uk-icon-home"></i> Home</h3>
+						Lorem ipsum dolor sit amet.
+					</div>
+				</div>
+
+				<div class="uk-width-medium-1-3">
+					<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-header uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-down" data-uk-scrollspy="{cls:'uk-animation-scale-down', repeat: true}">
+						<div class="uk-panel-badge uk-badge uk-badge-danger">Hot</div>
+						<h3 class="uk-panel-title"><i class="uk-icon-user"></i> User</h3>
+						Lorem ipsum dolor sit amet.
+					</div>
+				</div>
+
+				<div class="uk-width-medium-1-3">
+					<div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-up" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+						<div class="uk-panel-badge uk-badge uk-badge-success">Success</div>
+						<h3 class="uk-panel-title"><i class="uk-icon-cog"></i> Settings</h3>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<article class="uk-article">
+				<div class="uk-grid">
+					<div class="uk-width-5-10">
+						<h1 class="uk-article-title">Article Title</h1>
+					</div>
+					<div class="uk-width-1-10 uk-push-4-10">
+						<div class="uk-button-dropdown">
+								<div data-uk-dropdown="" class="">
+									<button class="uk-button uk-button-primary" type="submit"><i class="uk-icon-caret-down"></i></button>
+									<div class="uk-dropdown uk-dropdown-small" style="">
+										<ul class="uk-nav uk-nav-dropdown">
+											<li><a href="#"><i class="uk-icon-edit"></i> Edit</a></li>
+											<li><a href="#"><i class="uk-icon-eye-open"></i> View</a></li>
+											<li><a href="#"><i class="uk-icon-check"></i> Enable</a></li>
+											<li class="uk-nav-divider"></li>
+											<li><a href="#"><i class="uk-icon-trash"></i> Trash</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+				<p class="uk-article-meta">Written by Super User on 21 September 2013. Posted in Blog</p>
+				<p class="uk-article-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<hr class="uk-article-divider">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+				<a href="#">Read More</a>
+			</article>
+
+			<br>
+
+			<div class="uk-grid">
+				<div class="uk-width-3-10">
+					<h2 class="tm-article-subtitle">Comments</h2>
+				</div>
+				<div class="uk-width-5-10 uk-push-2-10">
+					<ul class="uk-subnav uk-subnav-pill">
+						<li><h4 class="uk-h4">Login with: </h4></li>
+						<li><a href="#">Open ID</a></li>
+						<li class="uk-active"><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li data-uk-dropdown>
+							<a href="#">More <i class="uk-icon-caret-down"></i></a>
+							<div class="uk-dropdown uk-dropdown-small">
+								<ul class="uk-nav uk-nav-dropdown">
+									<li><a href="#">Git Hub</a></li>
+									<li><a href="#">Linkedin</a></li>
+									<li class="uk-nav-header">Other Social Services</li>
+									<li><a href="#">My Space</a></li>
+									<li><a href="#">Digg It</a></li>
+									<li class="uk-nav-divider"></li>
+									<li><a href="#">More Services</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>		
+			</div>		
+			<ul class="uk-comment-list">
+				<li>
+					<article class="uk-comment border-uk">
+						<header class="uk-comment-header">
+							<img class="uk-comment-avatar" src="img/loading_page.gif" alt="Dipesh Bhardwaj">
+							<h4 class="uk-comment-title">Dipesh Bhardwaj</h4>
+							<h5 class="uk-comment-meta">1 day ago</h5>
+						</header>
+						<hr>
+						<div class="uk-comment-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+					</article>
+				</li>
+				<hr>
+				<li>
+					<article class="uk-comment border-uk">
+						<header class="uk-comment-header">
+							<img class="uk-comment-avatar" src="img/pedro.jpg" alt="Pedro Martins">
+							<h4 class="uk-comment-title">Pedro Martins</h4>
+							<h5 class="uk-comment-meta">19 hours ago</h5>
+						</header>
+						<hr>
+						<div class="uk-comment-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+					</article>
+					<ul>
+						<li>
+						<div class="sub-comment">
+							<article class="uk-comment">
+								<header class="uk-comment-header">
+									<img class="uk-comment-avatar" src="img/kseniya.png" alt="Kseniya Dylova">
+									<h4 class="uk-comment-title">Kseniya Dylova</h4>
+									<h5 class="uk-comment-meta">2 hours ago</h5>
+								</header>
+								<hr>
+								<div class="uk-comment-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+							</article>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<hr>
+			</ul>
+
+			<h2 class="tm-article-subtitle">Alignment of Image and Objects</h2>
+			<div class="uk-alert uk-alert-success">
+				<ul class="uk-breadcrumb">
+					<li><a href=""><i class="uk-icon-home"></i></a></li>
+					<li><a href="">About</a></li>
+					<li class="uk-active"><span>Post</span></li>
+				</ul>
+			</div>
+			<p class="uk-clearfix">
+				<img class="uk-align-medium-right" src="img/two.jpg" alt="">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+				GitHub was launched in April 2008.
+In a talk at Yahoo! headquarters on 24 February 2009, GitHub team members announced that during the first year that GitHub was online, it accumulated 46,000 public repositories, 17,000 of them in the previous month alone. At that time, about 6,200 repositories had been forked at least once and 4,600 merged. On 5 July 2009, a Github Blog post announced they reached the 100,000 users mark.<br>
+In another talk delivered at Yahoo! on 27 July 2009, Tom Preston-Werner announced that the numbers had risen to 90,000 unique public repositories, 12,000 having been forked at least once, for a total of 135,000 repositories. In July 2010, GitHub announced that it hosts 1 million repositories. In April 2011, GitHub announced that it is hosting 2 million repositories.<br>
+On 21 September 2011, GitHub announced it had reached over 1 million users.
+On 13 September 2012, on their homepage, GitHub announced it had over 2.1 million users hosting over 3.7 million repositories.<br>
+On 19 December 2012, GitHub announced it had over 2.8 million users hosting over 4.6 million repositories 
+On 16 January 2013, GitHub announced it had passed the 3 million users mark and was then hosting more than 5 million repositories.
+			</p>
+			<ul class="uk-pagination">
+				<li class="uk-disabled"><span><i class="uk-icon-double-angle-left"></i></span></li>
+				<li class="uk-active"><span>1</span></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><span>...</span></li>
+				<li><a href="#">20</a></li>
+				<li><a href="#"><i class="uk-icon-double-angle-right"></i></a></li>
+			</ul>
+			<hr>
+			<div class="uk-grid">
+		<div class="uk-width-medium-1-2">
+			<a class="uk-thumbnail uk-overlay-toggle" href="#">
+				<div class="uk-overlay">
+					<img src="img/pushy.jpg" alt="">
+					<div class="uk-overlay-area" data-uk-modal="{target:'#modal-3'}">
+						<div class="uk-overlay-caption">Pusy Cat</div>
+					</div>
+				</div>
+			</a>
+			<div id="modal-3" class="uk-modal" style="display: none;">
+				<div class="uk-modal-dialog uk-modal-dialog-frameless" style="margin-left: -300px;">
+					<a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+					<img src="img/pushy.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="uk-width-medium-1-2">
+			<a class="uk-thumbnail uk-overlay-toggle" href="#">
+				<div class="uk-overlay">
+					<img src="img/cutie.jpg" alt="">
+					<div class="uk-overlay-area" data-uk-modal="{target:'#modal-3'}">
+						<div class="uk-overlay-caption">Cutie Kittie</div>
+					</div>
+				</div>
+			</a>
+			<div id="modal-3" class="uk-modal" style="display: none;">
+				<div class="uk-modal-dialog uk-modal-dialog-frameless" style="margin-left: -300px;">
+					<a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+					<img src="img/cutie.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+</div>
+		</div>
+	
+
+	<div class="subscription">
+		<div class="uk-grid">
+			<div class="uk-width-6-10 topdiv">
+				<p class="uk-h3 footer"><strong>Stay on top of what's happening on project Tsuki no Me with Madara.</strong></p>
+				<p class="uk-h5 footer">Subscribe to our monthly mailing list to receive latest updates from project Tsuki no Me.</p>
+			</div>
+			
+			<div class="uk-width-4-10">
+				<div>
+          <form action="http://facebook.us7.list-manage1.com/subscribe/post?u=b09c8d2070c2bb605ba986713&amp;id=2402fd0ecd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              
+              <input type="text" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <div class="clear"><input type="submit" value="Subscribe Newsletter" name="subscribe" id="mc-embedded-subscribe" class="postfix small button expand"></div>
+          </form>
+          </div>
+			</div>	
+	</div>
+</div>
+
+<div class="zurb-footer-bottom">
+	<div class="uk-grid">
+		<div class="uk-width-6-10">
+      <ul class="zurb-links">
+        <li><a href="#" class="uk-h3">Tsuki No Me</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tags</a></li>
+        <li><a href="#">CSS-3 Hacks</a></li>
+        <li><a href="#">Themes</a></li>
+        <li><a href="#">Logos</a></li>
+      </ul>
+       <p class="copyright">2013 Tsuki No Me was crafted by <a href="http://in.linkedin.com/in/devdipesh/">Dipesh Bhardwaj</a>.</p>
+		</div>
+
+		<div class="uk-width-4-10">
+			<ul class="home-social">
+          <li><a href="http://www.twitter.com/FoundationGEEK" class="twitter"></a></li>
+          <li><a href="https://www.facebook.com/FoundationGEEK" class="facebook"></a></li>
+          <li><a href="http://foundationGeek.com/contact" class="mail"></a></li>
+        </ul>
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>
