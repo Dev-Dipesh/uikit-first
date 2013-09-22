@@ -1,5 +1,4 @@
 # UIkit
-===========
 
 **Project is available on:** http://dev-dipesh.github.io/uikit-first/
 
