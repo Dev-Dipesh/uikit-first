@@ -1,6 +1,8 @@
 # UIkit
 ===========
 
+**Project is available on:** http://dev-dipesh.github.io/uikit-first/
+
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.
 
 * Homepage: [http://www.getuikit.com](http://www.getuikit.com)
